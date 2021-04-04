@@ -45,7 +45,7 @@ Username: admin
 Password: admin
 email: admin@admin.com
 
-## endpoints
+## Endpoints
 To get list and create device
 `http://127.0.0.1:8000/devices/`
 
