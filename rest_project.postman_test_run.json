@@ -1,0 +1,128 @@
+{
+	"id": "366bee13-8262-4c12-bd34-f4f8f84215de",
+	"name": "rest_project",
+	"timestamp": "2021-04-04T08:11:27.957Z",
+	"collection_id": "006ef993-6fa8-43fc-ae4d-d1a5976e534a",
+	"folder_id": 0,
+	"environment_id": "0a980086-8303-4901-9269-cda518600616",
+	"totalPass": 0,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "190b6ee3-4ffc-4d5c-9e77-9203410bd22e",
+			"name": "http://127.0.0.1:8000/get_data/",
+			"url": "http://127.0.0.1:8000/get_data/",
+			"time": 797,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				797
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4704da39-732a-467c-9885-038e6d364a0f",
+			"name": "http://127.0.0.1:8000/rest-auth/login/?",
+			"url": "http://127.0.0.1:8000/rest-auth/login/?",
+			"time": 844,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				844
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ca668bdd-cf55-42a7-a977-367663f78bf1",
+			"name": "http://127.0.0.1:8000/devices/",
+			"url": "http://127.0.0.1:8000/devices/",
+			"time": 334,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				334
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "aa55fc07-6c7b-4421-a315-5861f196a973",
+			"name": "http://127.0.0.1:8000/devices/4/",
+			"url": "http://127.0.0.1:8000/devices/4/",
+			"time": 63,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				63
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d5bd719f-7bb9-4b53-8ff2-72c597e18ec8",
+			"name": "http://127.0.0.1:8000/send_update/\n",
+			"url": "http://127.0.0.1:8000/send_update/%0A",
+			"time": 16,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				16
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2054,
+	"collection": {
+		"requests": [
+			{
+				"id": "190b6ee3-4ffc-4d5c-9e77-9203410bd22e",
+				"method": "POST"
+			},
+			{
+				"id": "4704da39-732a-467c-9885-038e6d364a0f",
+				"method": "POST"
+			},
+			{
+				"id": "ca668bdd-cf55-42a7-a977-367663f78bf1",
+				"method": "POST"
+			},
+			{
+				"id": "aa55fc07-6c7b-4421-a315-5861f196a973",
+				"method": "PUT"
+			},
+			{
+				"id": "d5bd719f-7bb9-4b53-8ff2-72c597e18ec8",
+				"method": "POST"
+			}
+		]
+	}
+}

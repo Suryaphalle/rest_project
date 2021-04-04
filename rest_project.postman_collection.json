@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "006ef993-6fa8-43fc-ae4d-d1a5976e534a",
+		"name": "rest_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/get_data/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRFToken",
+						"value": "hVFSVDCzHHzHcCs9HY3QHK2Uk4U4nV5zcauAHvg0aaBrqAbHRWC6pVmpMUIe0EAd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dev_id",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "sensor_id",
+							"value": "pres2",
+							"type": "text"
+						},
+						{
+							"key": "time",
+							"value": "10",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/get_data/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"get_data",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/rest-auth/login/?",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRFToken",
+						"value": "hVFSVDCzHHzHcCs9HY3QHK2Uk4U4nV5zcauAHvg0aaBrqAbHRWC6pVmpMUIe0EAd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/rest-auth/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"rest-auth",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/devices/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRFToken",
+						"value": "hVFSVDCzHHzHcCs9HY3QHK2Uk4U4nV5zcauAHvg0aaBrqAbHRWC6pVmpMUIe0EAd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "dev3",
+							"type": "text"
+						},
+						{
+							"key": "dev_id",
+							"value": "3333",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/devices/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"devices",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/devices/4/",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "X-CSRFToken",
+						"value": "hVFSVDCzHHzHcCs9HY3QHK2Uk4U4nV5zcauAHvg0aaBrqAbHRWC6pVmpMUIe0EAd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "dev4",
+							"type": "text"
+						},
+						{
+							"key": "dev_id",
+							"value": "4444",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/devices/4/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"devices",
+						"4",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/send_update/\n",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRFToken",
+						"value": "hVFSVDCzHHzHcCs9HY3QHK2Uk4U4nV5zcauAHvg0aaBrqAbHRWC6pVmpMUIe0EAd",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dev_id",
+							"value": "1111",
+							"type": "text"
+						},
+						{
+							"key": "sensor_id",
+							"value": "pres2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/send_update/\n",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"send_update",
+						"\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
