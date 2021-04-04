@@ -30,18 +30,30 @@ Once `pip` has finished downloading the dependencies:
 (env)$ python manage.py runserver
 ```
 
-# To get continues reading of devices we need to run bacjground-tasks
+## To get continues reading of devices we need to run bacjground-tasks
 Open new terminal and activate same virtual environment from project directory to run following command: 
 ```sh
 (env)$ python manage.py process_tasks
 ```
-# To login and get JWT token 
+## To login and get JWT token 
 And navigate to `http://127.0.0.1:8000/rest-auth/login/`.
 
 
-# Credntials.
+## Credntials.
 I have used sqlite3 database
 Username: admin
 Password: admin
 email: admin@admin.com
- 
+
+## endpoints
+To get list and create device
+`http://127.0.0.1:8000/devices/`
+
+To edit device
+`http://127.0.0.1:8000/devices/<int:pk>/`
+
+To send_update to particuler device of perticular sensor
+`http://127.0.0.1:8000/send_update/`
+
+TO get data of particuler device of perticular sensor
+`http://127.0.0.1:8000/get_data/`
