@@ -55,5 +55,5 @@ To edit device
 To send_update to particuler device of perticular sensor
 `http://127.0.0.1:8000/send_update/`
 
-TO get data of particuler device of perticular sensor
+To get data of particuler device of perticular sensor
 `http://127.0.0.1:8000/get_data/`
