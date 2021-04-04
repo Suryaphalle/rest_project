@@ -38,3 +38,10 @@ Open new terminal and activate same virtual environment from project directory t
 # To login and get JWT token 
 And navigate to `http://127.0.0.1:8000/rest-auth/login/`.
 
+
+# Credntials.
+I have used sqlite3 database
+Username: admin
+Password: admin
+email: admin@admin.com
+ 
